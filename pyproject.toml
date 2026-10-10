@@ -1,0 +1,18 @@
+[project]
+name = "estudio"
+version = "0.1.0"
+description = "有状态的结构化学习引擎 — AI 驱动，本地优先"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=13.0",
+    "prompt-toolkit>=3.0",
+    "litellm>=1.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+estudio = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
